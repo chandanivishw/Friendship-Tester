@@ -9,6 +9,7 @@
 h2{
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,6 +20,9 @@ body {
     align-items: center;
     flex-direction: column;
     color: #2c3e50;
+    /* font-style: oblique; */
+    /* padding-bottom: 3rem; */
+    /* padding-top: 3rem; */
 }
 
 /* Container for form elements */
@@ -91,3 +95,53 @@ input[type="text"]:focus {
     font-size: 18px;
     color: #2c3e50;
 }
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Keep container width flexible */
+    div:first-of-type,
+    #showScore {
+        width: 95%;
+        max-width: 95vw;
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Adjust font sizes for readability */
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    #submit-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    #showScore h3 {
+        font-size: 16px;
+    }
+
+    /* Make sure no content gets cut off */
+    #showScore {
+        overflow-wrap: break-word; /* break long words */
+        word-wrap: break-word;
+        hyphens: auto;
+        padding-bottom: 25px; /* extra padding at bottom */
+        margin-bottom: 3rem;
+    }
+}
+
